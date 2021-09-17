@@ -1,0 +1,1271 @@
+<style>
+  /*used when you want to hide default signature*/
+  /*end signature hide hack*/
+
+  #cform {
+    width: 100%;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 8pt;
+    line-height: normal;
+    /* Needed because the table at the top was extending beyond the height of the section */
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  #cform h1 {
+    font-size: 4em;
+  }
+
+  #cform h2 {
+    font-size: 3.5em;
+  }
+
+  #cform h3 {
+    font-size: 3em;
+  }
+
+  #cform h4 {
+    font-size: 2.5em;
+  }
+
+  #cform h5 {
+    font-size: 2em;
+  }
+
+  #cform h6 {
+    font-size: 1.5em;
+  }
+
+  #cform .f1 {
+    font-size: 0.2em;
+  }
+
+  #cform .f2 {
+    font-size: 0.4em;
+  }
+
+  #cform .f3 {
+    font-size: 0.6em;
+  }
+
+  #cform .f3-5 {
+    font-size: 0.7em;
+  }
+
+  #cform .f4 {
+    font-size: 0.8em;
+  }
+
+  #cform .f4-5 {
+    font-size: 0.9em;
+  }
+
+  #cform .f5 {
+    font-size: 1em;
+  }
+
+  #cform .f5-5 {
+    font-size: 1.1em;
+  }
+
+  #cform .f6 {
+    font-size: 1.2em;
+  }
+
+  #cform .f6-5 {
+    font-size: 1.3em;
+  }
+
+  #cform .f7 {
+    font-size: 1.4em;
+  }
+
+  #cform .f8 {
+    font-size: 1.6em;
+  }
+
+  #cform .f9 {
+    font-size: 1.8em;
+  }
+
+  #cform .f10 {
+    font-size: 2em;
+  }
+
+  #cform .bold {
+    font-weight: bold;
+  }
+
+  #cform p {
+    margin: 0em;
+  }
+
+  #cform #cform-head {
+    text-align: center;
+    width: 100%;
+  }
+
+  #cform #cform-content-container {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0em;
+    margin: 0.4167em auto 0em auto;
+  }
+
+  #cform .cform-page {
+    page-break-inside: avoid;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 2px auto 5px auto;
+    width: 100%;
+  }
+
+  #cform .sectionTitle {
+    text-align: center;
+    font-weight: bold;
+    padding: 3px auto 3px auto;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-size: 1em;
+  }
+
+  #cform .cform-group {
+    margin: 0em;
+    box-sizing: border-box;
+    float: left;
+    padding: 2px 5px;
+  }
+
+  #cform .cform-section {
+    box-sizing: border-box;
+    margin: 0em;
+    padding: 0em 0em;
+  }
+
+  #cform .cform-section:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0em;
+    clear: both;
+  }
+
+  #cform .w5 {
+    width: 5% !important;
+  }
+
+  #cform .w7 {
+    width: 7% !important;
+  }
+
+  #cform .w8 {
+    width: 8% !important;
+  }
+
+  #cform .w10 {
+    width: 10% !important;
+  }
+
+  #cform .w13 {
+    width: 13% !important;
+  }
+
+  #cform .w14 {
+    width: 14% !important;
+  }
+
+  #cform .w15 {
+    width: 15% !important;
+  }
+
+  #cform .w16 {
+    width: 16.6667% !important;
+  }
+
+  #cform .w19 {
+    width: 19% !important;
+  }
+
+  #cform .w20 {
+    width: 20% !important;
+  }
+
+  #cform .w25 {
+    width: 25% !important;
+  }
+
+  #cform .w30 {
+    width: 30% !important;
+  }
+
+  #cform .w33 {
+    width: 33.3333% !important;
+  }
+
+  #cform .w35 {
+    width: 35% !important;
+  }
+
+  #cform .w40 {
+    width: 40% !important;
+  }
+
+  #cform .w45 {
+    width: 45% !important;
+  }
+
+  #cform .w50 {
+    width: 50% !important;
+  }
+
+  #cform .w55 {
+    width: 55% !important;
+  }
+
+  #cform .w60 {
+    width: 60% !important;
+  }
+
+  #cform .w65 {
+    width: 65% !important;
+  }
+
+  #cform .w66 {
+    width: 66.6667% !important;
+  }
+
+  #cform .w67 {
+    width: 66.6667% !important;
+  }
+
+  #cform .w70 {
+    width: 70% !important;
+  }
+
+  #cform .w75 {
+    width: 75% !important;
+  }
+
+  #cform .w80 {
+    width: 80% !important;
+  }
+
+  #cform .w83 {
+    width: 83.3333% !important;
+  }
+
+  #cform .w85 {
+    width: 85% !important;
+  }
+
+  #cform .w90 {
+    width: 90% !important;
+  }
+
+  #cform .w95 {
+    width: 95% !important;
+  }
+
+  #cform .w100 {
+    width: 100% !important;
+  }
+
+  #cform input {
+    font-size: 0.9167em;
+  }
+
+  #cform table.inputContainerTable {
+    width: 100%;
+    padding: 0em;
+    margin: 0em;
+    float: left;
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+    clear: both;
+    min-height: 1.75em;
+    font-size: 1em;
+    -webkit-border-horizontal-spacing: 0px;
+    /* set to 2px if want break between side-by-side inputs*/
+    -webkit-border-vertical-spacing: 0px;
+  }
+
+  #cform table.inputContainerTable.spacedTable {
+    -webkit-border-horizontal-spacing: 2px !important;
+  }
+
+  #cform input[type="checkbox"] {
+    display: inline;
+    vertical-align: bottom;
+    margin: 0em;
+  }
+
+  #cform input {
+    display: inline;
+  }
+
+  .headerTable table {
+    border-collapse: collapse !important;
+  }
+
+  #cform .inputContainerTable td,
+  #cform .inputContainerTable tr {
+    padding: 0em;
+    margin: 0em;
+  }
+
+  #cform .inputContainerTable .inputUline {
+    width: 100%;
+    min-height: 1.4167em;
+    height: 1.4167em;
+    max-height: 1.4167em;
+    box-sizing: border-box;
+    padding-left: 0.5em;
+  }
+
+  #cform .inputContainerTable input.inputUline {
+    border: 0.0833em solid gray;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    background-color: rgb(244, 244, 244);
+    vertical-align: bottom;
+  }
+
+  #cform .inputContainerTable td.inputContain {
+    border-bottom: 0.0833em solid black;
+    width: 100%;
+    font-size: 1em;
+    min-height: 1.5em;
+    height: 1.5em;
+    max-height: 1.5em;
+    box-sizing: border-box;
+    padding-left: 2px;
+    padding-right: 2px;
+    vertical-align: bottom;
+    padding-bottom: 1px;
+  }
+
+  #cform .inputContainerTable td.inputContainLabel {
+    font-size: 1em;
+    vertical-align: bottom;
+    font-weight: bold;
+  }
+
+  #cform .inputContainerTable td.inputBelow {
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em;
+    vertical-align: top;
+  }
+
+  #cform .inputContainerTable tr.lowerRow {
+    line-height: 0.9em;
+    min-height: 0.9em;
+    height: 1em;
+    max-height: 0.9em;
+  }
+
+  #cform .inputContainerTable tr.upperRow {
+    line-height: 1.4167em;
+    min-height: 1.4167em;
+    height: 1.4167em;
+    max-height: 1.4167em;
+  }
+
+  #cform .pageFooter {
+    page-break-after: always;
+  }
+
+  #cform .center {
+    text-align: center !important;
+  }
+
+  #cform .left {
+    text-align: left !important;
+  }
+
+  #cform .right {
+    text-align: right !important;
+  }
+
+  #cform .tempRight {
+    text-align: right !important;
+  }
+
+  #cform .justify {
+    text-align: justify !important;
+  }
+
+  #cform .no-bold {
+    font-weight: normal !important;
+  }
+
+  #cform .underline {
+    text-decoration: underline !important;
+  }
+
+  #cform .no-border {
+    border: none !important;
+  }
+
+  #cform .inline-block {
+    display: inline-block;
+  }
+
+  #cform .vTop {
+    vertical-align: top !important;
+  }
+
+  #cform .vSpace {
+    min-height: 1px !important;
+  }
+
+  #cform hr {
+    border: 1.5px solid black;
+    border-bottom: none;
+  }
+
+  #cform .clr {
+    height: 0;
+    display: block;
+    clear: both;
+  }
+
+  .m0 {
+    margin: 0;
+  }
+
+  #cform .p0 {
+    padding: 0px;
+  }
+
+  #cform .p1 {
+    padding: 1px;
+  }
+
+  #cform .p2 {
+    padding: 2px;
+  }
+
+  #cform .p3 {
+    padding: 3px;
+  }
+
+  #cform .p4 {
+    padding: 4px;
+  }
+
+  #cform .p5 {
+    padding: 5px;
+  }
+
+  #cform .p6 {
+    padding: 6px;
+  }
+
+  #cform .p7 {
+    padding: 7px;
+  }
+
+  #cform .p8 {
+    padding: 8px;
+  }
+
+  #cform .p9 {
+    padding: 9px;
+  }
+
+  #cform .p10 {
+    padding: 10px;
+  }
+
+  #cform .p11 {
+    padding: 11px;
+  }
+
+  #cform .p12 {
+    padding: 12px;
+  }
+
+  #cform .p13 {
+    padding: 13px;
+  }
+
+  #cform .p14 {
+    padding: 14px;
+  }
+
+  #cform .p15 {
+    padding: 15px;
+  }
+
+  #cform .p16 {
+    padding: 16px;
+  }
+
+  #cform .p17 {
+    padding: 17px;
+  }
+
+  #cform .p18 {
+    padding: 18px;
+  }
+
+  #cform .p19 {
+    padding: 19px;
+  }
+
+  #cform .p20 {
+    padding: 20px;
+  }
+
+  #cform .pt0 {
+    padding-top: 0px;
+  }
+
+  #cform .pt1 {
+    padding-top: 1px;
+  }
+
+  #cform .pt2 {
+    padding-top: 2px;
+  }
+
+  #cform .pt3 {
+    padding-top: 3px;
+  }
+
+  #cform .pt4 {
+    padding-top: 4px;
+  }
+
+  #cform .pt5 {
+    padding-top: 5px;
+  }
+
+  #cform .pt6 {
+    padding-top: 6px;
+  }
+
+  #cform .pt7 {
+    padding-top: 7px;
+  }
+
+  #cform .pt8 {
+    padding-top: 8px;
+  }
+
+  #cform .pt9 {
+    padding-top: 9px;
+  }
+
+  #cform .pt10 {
+    padding-top: 10px;
+  }
+
+  #cform .pt11 {
+    padding-top: 11px;
+  }
+
+  #cform .pt12 {
+    padding-top: 12px;
+  }
+
+  #cform .pt13 {
+    padding-top: 13px;
+  }
+
+  #cform .pt14 {
+    padding-top: 14px;
+  }
+
+  #cform .pt15 {
+    padding-top: 15px;
+  }
+
+  #cform .pt16 {
+    padding-top: 16px;
+  }
+
+  #cform .pt17 {
+    padding-top: 17px;
+  }
+
+  #cform .pt18 {
+    padding-top: 18px;
+  }
+
+  #cform .pt19 {
+    padding-top: 19px;
+  }
+
+  #cform .pt20 {
+    padding-top: 20px;
+  }
+
+  #cform .pb0 {
+    padding-bottom: 0px;
+  }
+
+  #cform .pb1 {
+    padding-bottom: 1px;
+  }
+
+  #cform .pb2 {
+    padding-bottom: 2px;
+  }
+
+  #cform .pb3 {
+    padding-bottom: 3px;
+  }
+
+  #cform .pb4 {
+    padding-bottom: 4px;
+  }
+
+  #cform .pb5 {
+    padding-bottom: 5px;
+  }
+
+  #cform .pb6 {
+    padding-bottom: 6px;
+  }
+
+  #cform .pb7 {
+    padding-bottom: 7px;
+  }
+
+  #cform .pb8 {
+    padding-bottom: 8px;
+  }
+
+  #cform .pb9 {
+    padding-bottom: 9px;
+  }
+
+  #cform .pb10 {
+    padding-bottom: 10px;
+  }
+
+  #cform .pb11 {
+    padding-bottom: 11px;
+  }
+
+  #cform .pb12 {
+    padding-bottom: 12px;
+  }
+
+  #cform .pb13 {
+    padding-bottom: 13px;
+  }
+
+  #cform .pb14 {
+    padding-bottom: 14px;
+  }
+
+  #cform .pb15 {
+    padding-bottom: 15px;
+  }
+
+  #cform .pb16 {
+    padding-bottom: 16px;
+  }
+
+  #cform .pb17 {
+    padding-bottom: 17px;
+  }
+
+  #cform .pb18 {
+    padding-bottom: 18px;
+  }
+
+  #cform .pb19 {
+    padding-bottom: 19px;
+  }
+
+  #cform .pb20 {
+    padding-bottom: 20px;
+  }
+
+  #cform .pl0 {
+    padding-left: 0px;
+  }
+
+  #cform .pl1 {
+    padding-left: 1px;
+  }
+
+  #cform .pl2 {
+    padding-left: 2px;
+  }
+
+  #cform .pl3 {
+    padding-left: 3px;
+  }
+
+  #cform .pl4 {
+    padding-left: 4px;
+  }
+
+  #cform .pl5 {
+    padding-left: 5px;
+  }
+
+  #cform .pl6 {
+    padding-left: 6px;
+  }
+
+  #cform .pl7 {
+    padding-left: 7px;
+  }
+
+  #cform .pl8 {
+    padding-left: 8px;
+  }
+
+  #cform .pl9 {
+    padding-left: 9px;
+  }
+
+  #cform .pl10 {
+    padding-left: 10px;
+  }
+
+  #cform .pl11 {
+    padding-left: 11px;
+  }
+
+  #cform .pl12 {
+    padding-left: 12px;
+  }
+
+  #cform .pl13 {
+    padding-left: 13px;
+  }
+
+  #cform .pl14 {
+    padding-left: 14px;
+  }
+
+  #cform .pl15 {
+    padding-left: 15px;
+  }
+
+  #cform .pl16 {
+    padding-left: 16px;
+  }
+
+  #cform .pl17 {
+    padding-left: 17px;
+  }
+
+  #cform .pl18 {
+    padding-left: 18px;
+  }
+
+  #cform .pl19 {
+    padding-left: 19px;
+  }
+
+  #cform .pl20 {
+    padding-left: 20px;
+  }
+
+  #cform .pr0 {
+    padding-right: 0px;
+  }
+
+  #cform .pr1 {
+    padding-right: 1px;
+  }
+
+  #cform .pr2 {
+    padding-right: 2px;
+  }
+
+  #cform .pr3 {
+    padding-right: 3px;
+  }
+
+  #cform .pr4 {
+    padding-right: 4px;
+  }
+
+  #cform .pr5 {
+    padding-right: 5px;
+  }
+
+  #cform .pr6 {
+    padding-right: 6px;
+  }
+
+  #cform .pr7 {
+    padding-right: 7px;
+  }
+
+  #cform .pr8 {
+    padding-right: 8px;
+  }
+
+  #cform .pr9 {
+    padding-right: 9px;
+  }
+
+  #cform .pr10 {
+    padding-right: 10px;
+  }
+
+  #cform .pr11 {
+    padding-right: 11px;
+  }
+
+  #cform .pr12 {
+    padding-right: 12px;
+  }
+
+  #cform .pr13 {
+    padding-right: 13px;
+  }
+
+  #cform .pr14 {
+    padding-right: 14px;
+  }
+
+  #cform .pr15 {
+    padding-right: 15px;
+  }
+
+  #cform .pr16 {
+    padding-right: 16px;
+  }
+
+  #cform .pr17 {
+    padding-right: 17px;
+  }
+
+  #cform .pr18 {
+    padding-right: 18px;
+  }
+
+  #cform .pr19 {
+    padding-right: 19px;
+  }
+
+  #cform .pr20 {
+    padding-right: 20px;
+  }
+
+  .offset-block {
+    min-height: 1px;
+  }
+
+  .mobile-br {
+    display: none;
+  }
+
+  @media all and (min-width: 768px) {
+    #cform {
+      font-size: 10pt;
+    }
+
+    .ba {
+      border: 1px solid black;
+    }
+
+    .bh {
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+    }
+
+    .bv {
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+    }
+
+    .bt {
+      border-top: 1px solid black;
+    }
+
+    .br {
+      border-right: 1px solid black;
+    }
+
+    .bb {
+      border-bottom: 1px solid black;
+    }
+
+    .bl {
+      border-left: 1px solid black;
+    }
+
+    .tba {
+      border: 2px solid black;
+    }
+
+    .tbh {
+      border-left: 2px solid black;
+      border-right: 2px solid black;
+    }
+
+    .tbv {
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+    }
+
+    .tbt {
+      border-top: 2px solid black;
+    }
+
+    .tbr {
+      border-right: 2px solid black;
+    }
+
+    .tbb {
+      border-bottom: 2px solid black;
+    }
+
+    .tbl {
+      border-left: 2px solid black;
+    }
+
+    .fh {
+      min-height: 22px;
+    }
+
+    #cform .hidePad {
+      padding: 30px 20px 0;
+    }
+
+    #cform .padLeft {
+      padding-left: 30px;
+    }
+  }
+
+  @media print {
+    .ba {
+      border: 1px solid black;
+    }
+
+    .bh {
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+    }
+
+    .bv {
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+    }
+
+    .bt {
+      border-top: 1px solid black;
+    }
+
+    .br {
+      border-right: 1px solid black;
+    }
+
+    .bb {
+      border-bottom: 1px solid black;
+    }
+
+    .bl {
+      border-left: 1px solid black;
+    }
+
+    .tba {
+      border: 2px solid black;
+    }
+
+    .tbh {
+      border-left: 2px solid black;
+      border-right: 2px solid black;
+    }
+
+    .tbv {
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+    }
+
+    .tbt {
+      border-top: 2px solid black;
+    }
+
+    .tbr {
+      border-right: 2px solid black;
+    }
+
+    .tbb {
+      border-bottom: 2px solid black;
+    }
+
+    .tbl {
+      border-left: 2px solid black;
+    }
+
+    .fh {
+      min-height: 22px;
+    }
+
+    #cform .hidePad {
+      padding: 30px 20px 0;
+    }
+
+    #cform .padLeft {
+      padding-left: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    #cform {
+      font-size: 12pt;
+    }
+
+    .mobile-clr {
+      display: block;
+      min-height: 1px;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      clear: both;
+      font-size: 10pt;
+    }
+
+    #cform .hidePad {
+      padding: 0;
+    }
+
+    #cform .padLeft {
+      padding-left: 5px;
+    }
+
+    #cform .tempRight {
+      text-align: left !important;
+    }
+
+    #cform .inputContainerTable td.inputContainLabel,
+    #cform .inputContainerTable td.inputBelow {
+      white-space: normal;
+    }
+
+    #cform .m0 {
+      width: 0% !important;
+    }
+
+    #cform .m5 {
+      width: 5% !important;
+    }
+
+    #cform .m7 {
+      width: 7% !important;
+    }
+
+    #cform .m8 {
+      width: 8% !important;
+    }
+
+    #cform .m10 {
+      width: 10% !important;
+    }
+
+    #cform .m14 {
+      width: 14% !important;
+    }
+
+    #cform .m15 {
+      width: 15% !important;
+    }
+
+    #cform .m16 {
+      width: 16.6667% !important;
+    }
+
+    #cform .m19 {
+      width: 19% !important;
+    }
+
+    #cform .m20 {
+      width: 20% !important;
+    }
+
+    #cform .m25 {
+      width: 25% !important;
+    }
+
+    #cform .m30 {
+      width: 30% !important;
+    }
+
+    #cform .m33 {
+      width: 33.3333% !important;
+    }
+
+    #cform .m35 {
+      width: 35% !important;
+    }
+
+    #cform .m40 {
+      width: 40% !important;
+    }
+
+    #cform .m45 {
+      width: 45% !important;
+    }
+
+    #cform .m50 {
+      width: 50% !important;
+    }
+
+    #cform .m55 {
+      width: 55% !important;
+    }
+
+    #cform .m60 {
+      width: 60% !important;
+    }
+
+    #cform .m65 {
+      width: 65% !important;
+    }
+
+    #cform .m66 {
+      width: 66.6667% !important;
+    }
+
+    #cform .m67 {
+      width: 66.6667% !important;
+    }
+
+    #cform .m70 {
+      width: 70% !important;
+    }
+
+    #cform .m75 {
+      width: 75% !important;
+    }
+
+    #cform .m80 {
+      width: 80% !important;
+    }
+
+    #cform .m83 {
+      width: 83.3333% !important;
+    }
+
+    #cform .m85 {
+      width: 85% !important;
+    }
+
+    #cform .m90 {
+      width: 90% !important;
+    }
+
+    #cform .m95 {
+      width: 95% !important;
+    }
+
+    #cform .m100 {
+      width: 100% !important;
+    }
+
+    .mba {
+      border: 1px solid black;
+    }
+
+    .mbh {
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+    }
+
+    .mbv {
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+    }
+
+    .mbt {
+      border-top: 1px solid black;
+    }
+
+    .mbr {
+      border-right: 1px solid black;
+    }
+
+    .mbb {
+      border-bottom: 1px solid black;
+    }
+
+    .mbl {
+      border-left: 1px solid black;
+    }
+
+    .mtba {
+      border: 2px solid black;
+    }
+
+    .mtbh {
+      border-left: 2px solid black;
+      border-right: 2px solid black;
+    }
+
+    .mtbv {
+      border-top: 2px solid black;
+      border-bottom: 2px solid black;
+    }
+
+    .mtbt {
+      border-top: 2px solid black;
+    }
+
+    .mtbr {
+      border-right: 2px solid black;
+    }
+
+    .mtbb {
+      border-bottom: 2px solid black;
+    }
+
+    .mtbl {
+      border-left: 2px solid black;
+    }
+
+    .mh {
+      min-height: 40px;
+    }
+
+    .mobile-br {
+      display: block;
+    }
+  }
+</style>
+
+<html lang="en">
+  <!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="cform">
+      <!-- Page 1 -->
+      <div class="cform-page hidePad">
+        <!-- Header -->
+        <div class="cform-section">
+          <div class="cform-group w100 m100 center">
+            <img
+              src="https://d1miv8abus7gau.cloudfront.net/logos/interstatepest20210209091331.png"
+              style="cursor: pointer; height: 50px"
+            />
+          </div>
+          <div
+            class="cform-group w100 m100 center"
+            style="background: rgb(89, 89, 89); color: white"
+          >
+            EXCLUSION MATERIALS AND TOOLS CHECKLIST
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
