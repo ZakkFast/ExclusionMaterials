@@ -1258,12 +1258,102 @@
               style="cursor: pointer; height: 50px"
             />
           </div>
-          <div
-            class="cform-group w100 m100 center"
-            style="background: rgb(89, 89, 89); color: white"
-          >
-            EXCLUSION MATERIALS AND TOOLS CHECKLIST
+          <div class="cform-group w50 m100 center">
+            {{officeName}}<br>
+            {{officePhone}}<br>
+            {{officeEmail}}
+        </div>
+        <div class="cform-group w50 m100 center">
+            {{officeAddress}}<br>
+            {{officeCity}}, {{officeState}} {{officeZip}}
+        </div>
+          <div style="clear: both; height: 15px;"></div>
+
+          <!-- Customer Info -->
+          <div class="cform-section">
+              <div class="cform-group w50 m100 ba mba" style="padding: 0;">
+                  <div class="bb mbb" style="padding: 5.5px 5px 1px; box-sizing: border-box;">
+                      <span style="font-size: .7em;">CUSTOMER NAME</span><br>
+                      <input type="text" style="display: inline; margin: 1px 0; font-size: 1em; width: 100%; padding-left: 5px;" value="{{customerName}}&nbsp;">
+                  </div>
+                  <div class="bb mbb" style="padding: 5.5px 5px 1px; box-sizing: border-box;">
+                      <span style="font-size: .7em;">STREET</span><br>
+                      <input type="text" style="display: inline; margin: 0; font-size: 1em; width: 100%; padding-left: 5px;" value="{{customerAddress}}&nbsp;">
+                  </div>
+                  <div style="padding: 5.5px 5px 1px; box-sizing: border-box;">
+                      <span style="font-size: .7em;">CITY, STATE, ZIP</span><br>
+                      <input type="text" style="display: inline; margin: 0; font-size: 1em; width: 100%; padding-left: 5px;" value="{{customerCity}}, {{customerState}} {{customerZip}}&nbsp;">
+                  </div>
+              </div>
+              <div class="cform-group w50 m100 bt br bb mbl mbb mbr" style="padding: 0;">
+                  <div class="bb mbb" style="padding: 2px 5px 0; box-sizing: border-box;">
+                      <span style="font-size: .7em;">PHONE </span><input type="text" style="display: inline; margin: 0; font-size: .9em; padding-left: 5px;" value="{{customerPhone}}&nbsp;">
+                  </div>
+                  <div class="bb mbb" style="padding: 2px 5px 0; box-sizing: border-box;">
+                      <span style="font-size: .7em;">EMAIL </span><input type="text" style="display: inline; margin: 0; font-size: .9em; padding-left: 5px;" value="{{customerEmail}}&nbsp;">
+                  </div>
+                  <div class="bb mbb" style="padding: 5.5px 5px 1px; box-sizing: border-box;">
+                      <span style="font-size: .7em;">INSPECTED BY </span><br>
+                      <input type="text" style="display: inline; margin: 0; font-size: 1em; padding-left: 5px; width: 100%;">
+                  </div>
+                  <div style="padding: 5.5px 5px 1px; box-sizing: border-box;">
+                      <span style="font-size: .7em;">DATE OF INSPECTION </span><br>
+                      <input type="text" style="display: inline; margin: 0; font-size: 1em; padding-left: 5px; width: 100%;" value="{{date}}&nbsp;">
+                  </div>
+              </div>
           </div>
+          <div style="clear: both; height: 15px;"></div>
+          
+          <!-- Materials List -->
+          <div class="cform-group w100 m100 center"style="background: rgb(89, 89, 89); color: white">
+            REQUIRED EXCLUSION MATERIALS
+          </div>
+          <div style="clear: both; height: 15px;"></div>
+
+          <div class="cform-group w33 m100 f4">
+            <div style="display: inline-block; width: 20px;"><input type="checkbox" style="display: inline; margin: 0;"></div> METAL FLASHING
+            <div style="clear: both; height: 3px;"></div>
+            <div style="display: inline-block; width: 20px;"><input type="checkbox" style="display: inline; margin: 0;"></div> HARDWARE CLOTH
+            <div style="clear: both; height: 3px;"></div>
+            <div style="display: inline-block; width: 20px;"><input type="checkbox" style="display: inline; margin: 0;"></div> FOAM
+            <div style="clear: both; height: 3px;"></div>
+            <div style="display: inline-block; width: 20px;"><input type="checkbox" style="display: inline; margin: 0;"></div> EXCLUDER
+            <div style="clear: both; height: 3px;"></div>
+            <div style="display: inline-block; width: 20px;"><input type="checkbox" style="display: inline; margin: 0;"></div> CAULKING
+            <div style="clear: both; height: 3px;"></div>
+            <div style="display: inline-block; width: 20px;"><input type="checkbox" style="display: inline; margin: 0;"></div> ADHESIVE
+            <div style="clear: both; height: 3px;"></div>
+        </div>
+        <div class="cform-group w33 m100 f4">
+          <div style="display: inline-block; width: 20px;"><input type="checkbox" style="display: inline; margin: 0;"></div> WOOD - 2X4
+          <div style="clear: both; height: 3px;"></div>
+          <div style="display: inline-block; width: 20px;"><input type="checkbox" style="display: inline; margin: 0;"></div> WOOD - 2X6
+          <div style="clear: both; height: 3px;"></div>
+          <div style="display: inline-block; width: 20px;"><input type="checkbox" style="display: inline; margin: 0;"></div> WOOD - PLYWOOD
+          <div style="clear: both; height: 3px;"></div>
+            <div style="display: inline-block; width: 20px;"><input type="checkbox" style="display: inline; margin: 0;"></div> INSULATION - SHEET
+            <div style="clear: both; height: 3px;"></div>
+            <div style="display: inline-block; width: 20px;"><input type="checkbox" style="display: inline; margin: 0;"></div> INSULATION - BLOWN IN
+            <div style="clear: both; height: 3px;"></div>
+            <div style="display: inline-block; width: 20px;"><input type="checkbox" style="display: inline; margin: 0;"></div> VAPOR BARRIER
+            <div style="clear: both; height: 3px;"></div>
+        </div>
+        <div class="cform-group w33 m100 f4">
+            <div style="display: inline-block; width: 20px;"><input type="checkbox" style="display: inline; margin: 0;"></div> MAN DOOR SWEEP
+            <div style="clear: both; height: 3px;"></div>
+            <div style="display: inline-block; width: 20px;"><input type="checkbox" style="display: inline; margin: 0;"></div> GARAGE DOOR SWEEP
+            <div style="clear: both; height: 3px;"></div>
+            <div style="display: inline-block; width: 20px;"><input type="checkbox" style="display: inline; margin: 0;"></div> DRYER VENT COVER
+            <div style="clear: both; height: 3px;"></div>
+            <div style="display: inline-block; width: 20px;"><input type="checkbox" style="display: inline; margin: 0;"></div> METAL SCREWS/FASTNERS
+            <div style="clear: both; height: 3px;"></div>
+            <div style="display: inline-block; width: 20px;"><input type="checkbox" style="display: inline; margin: 0;"></div> WOOD SCREWS/FASTNERS
+            <div style="clear: both; height: 3px;"></div>
+            <div style="display: inline-block; width: 20px;"><input type="checkbox" style="display: inline; margin: 0;"></div> CONCRETE SCREWS/FASTNERS
+            <div style="clear: both; height: 3px;"></div>
+        </div>
+    </div>
+    <div style="clear: both; height: 15px;"></div>
         </div>
       </div>
     </div>
